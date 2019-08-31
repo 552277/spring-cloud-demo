@@ -12,6 +12,7 @@
 		<module>Feign-consumer-2</module>
 		<module>eureka-server-peer3</module>
         <module>feign-consumer-1</module>
+		<module>zipkin-server</module>
 	</modules>
 	<parent>
 		<groupId>org.springframework.boot</groupId>

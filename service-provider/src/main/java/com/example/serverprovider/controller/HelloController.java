@@ -21,6 +21,7 @@ public class HelloController {
 
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public String index() {
+//        logger.error("该条信息是通过logger打印出来的错误日志");
         ServiceInstance instance = client.getLocalServiceInstance();
         logger.info("/hello, host:[{}] , service_id: [{}], port: [{}]", instance.getHost(), instance.getServiceId(), instance.getPort());
         return "Hello World, I'm " + instance.getPort();
